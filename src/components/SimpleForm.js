@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Message } from './Message';
 
 export const SimpleForm = () => {
     const [form, setForm] = useState({
@@ -44,6 +45,11 @@ export const SimpleForm = () => {
                 </div>
 
             </form>
+            <hr/>
+
+            {
+                name === '123' && <Message />
+            }
         </>
     );
 };
