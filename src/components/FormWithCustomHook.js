@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from '../hooks/useForm';
 
 
@@ -16,6 +16,11 @@ export const FormWithCustomHook = () => {
         e.preventDefault();
         console.log( form );
     }
+
+
+    useEffect(()=>{
+        console.log('Email change!!!');
+    }, [email])
 
     return (
         <>
