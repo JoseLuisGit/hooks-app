@@ -38,7 +38,7 @@ export const useFetch = (url) => {
                         })
                     }
 
-                }, 4000)
+                }, 0)
           
             })
     }, [url])
