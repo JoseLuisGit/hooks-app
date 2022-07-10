@@ -7,12 +7,14 @@ import ReactDOM from 'react-dom';
 //import { UseRef } from './components/useRef/UseRef';
 //import { FormWithCustomHook } from './components/FormWithCustomHook';
 //import { SimpleForm } from './components/SimpleForm';
-import { CallbackCounter } from './components/useCallback/CallbackCounter';
+//import { CallbackCounter } from './components/useCallback/CallbackCounter';
+import { Padre } from './components/task-memo/Padre';
+
 import './index.css';
 
 
 ReactDOM.render(
-    <CallbackCounter />,
+    <Padre />,
   document.getElementById('root')
 );
 
