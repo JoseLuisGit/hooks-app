@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
-import { useCounterHooks } from '../../hooks/useCounter';
-import { useFetch } from '../../hooks/useFetch';
+import React from 'react';
+import { useCounterHooks, useFetch } from '../../hooks';
+import { Quote } from './Quote';
+import { LoadingQuote } from './LoadingQuote';
 
 export const MutiCustomHooks = () => {
 
@@ -17,21 +18,12 @@ export const MutiCustomHooks = () => {
             {
                 loading
                 ?
-                   <div className='alert alert-success'>
-                      Loading...
-                   </div>
+                 <LoadingQuote />
                 :
-
-                    <blockquote className='blockquote text-end'>
-                        <p>{ quote }</p>
-                        <footer className='blockquote-footer'>
-                            { author }
-                        </footer>
-                    </blockquote>
+                <Quote quote={quote} author={author} />
 
             }
-
-            <button className='btn btn-success' onClick={ increment }>
+            <button className='btn btn-success' disabled={loading} onClick={ increment }>
                 Next
             </button>
 
