@@ -7,12 +7,12 @@ import ReactDOM from 'react-dom';
 //import { UseRef } from './components/useRef/UseRef';
 //import { FormWithCustomHook } from './components/FormWithCustomHook';
 //import { SimpleForm } from './components/SimpleForm';
-import { MemorizedMemo } from './components/memos/MemorizedMemo';
+import { CallbackCounter } from './components/useCallback/CallbackCounter';
 import './index.css';
 
 
 ReactDOM.render(
-    <MemorizedMemo />,
+    <CallbackCounter />,
   document.getElementById('root')
 );
 
