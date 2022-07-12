@@ -8,13 +8,15 @@ import ReactDOM from 'react-dom';
 //import { FormWithCustomHook } from './components/FormWithCustomHook';
 //import { SimpleForm } from './components/SimpleForm';
 //import { CallbackCounter } from './components/useCallback/CallbackCounter';
-import { Padre } from './components/task-memo/Padre';
+//import { Padre } from './components/task-memo/Padre';
+import { TodoApp } from './components/reducer/TodoApp';
 
 import './index.css';
 
+//import './components/reducer';
 
-ReactDOM.render(
-    <Padre />,
-  document.getElementById('root')
-);
+ ReactDOM.render(
+     <TodoApp />,
+   document.getElementById('root')
+ );
 
