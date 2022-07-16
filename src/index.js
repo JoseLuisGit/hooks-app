@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+
 //import { CounterMemo } from './components/memos/CounterMemo';
 //import { Layout } from './components/useLayout/Layout';
 //import { RealRef } from './components/useRef/RealRef';
@@ -9,14 +11,18 @@ import ReactDOM from 'react-dom';
 //import { SimpleForm } from './components/SimpleForm';
 //import { CallbackCounter } from './components/useCallback/CallbackCounter';
 //import { Padre } from './components/task-memo/Padre';
-import { TodoApp } from './components/reducer/TodoApp';
+//import { TodoApp } from './components/reducer/TodoApp';
+
+import { MainApp } from './components/useContext/MainApp';
 
 import './index.css';
 
 //import './components/reducer';
 
  ReactDOM.render(
-     <TodoApp />,
+     <BrowserRouter>
+        <MainApp />
+     </BrowserRouter>,
    document.getElementById('root')
  );
 
